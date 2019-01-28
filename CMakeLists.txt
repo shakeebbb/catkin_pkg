@@ -136,6 +136,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
  add_executable(catkin_node src/catkin_node.cpp)
  add_executable(ros_node src/ros_node.cpp)
+ add_executable(turtle_node src/turtle_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,6 +153,9 @@ include_directories(
    ${catkin_LIBRARIES}
  )
  target_link_libraries(ros_node
+   ${catkin_LIBRARIES}
+ )
+ target_link_libraries(turtle_node
    ${catkin_LIBRARIES}
  )
 #############

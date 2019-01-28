@@ -1,10 +1,11 @@
 <launch>
 
-	<node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" />
+<node name="catkin_node" pkg="catkin_pkg" type="catkin_node" respawn="true" />
 
-<group ns="turtle1">
-	<node name="catkin_node" pkg="catkin_pkg" type="catkin_node" respawn="true" output="screen"/>
-		<param name="loopRate" value="20"/>
-</group>
+<node name="ros_node" pkg="catkin_pkg" type="ros_node" respawn="true" >
+<param name="loopRate" type="double" value="20.0"/>
+</node>
+
+
 
 </launch>
