@@ -68,6 +68,6 @@ $ roscore & rosrun turtlesim turtlesim_node <br />
 
 Now run the Matlab script (~/catkin_ws/src/catkin_pkg/matlab/script.m) in your Matlab and you should see the turtle moving in the circle again, but this time using Matlab!
 
-ROS is scary, isn't there any easier way to control the robots this way ???
+ROS is scary, isn't there a more efficient way to control the robots ???
 
 --- Let me know if you could find any. :)
