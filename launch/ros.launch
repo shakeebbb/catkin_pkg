@@ -1,0 +1,5 @@
+<launch>
+
+<include file="$(find catkin_pkg)/launch/catkin.launch" />
+
+</launch>

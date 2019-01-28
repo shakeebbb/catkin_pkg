@@ -1,0 +1,11 @@
+<launch>
+
+<node name="catkin_node" pkg="catkin_pkg" type="catkin_node" respawn="true" />
+
+<node name="ros_node" pkg="catkin_pkg" type="ros_node" respawn="true" >
+<param name="loopRate" type="double" value="20.0"/>
+</node>
+
+
+
+</launch>
